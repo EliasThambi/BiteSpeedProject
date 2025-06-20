@@ -1,0 +1,29 @@
+{
+  "name": "bitespeed-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "prisma migrate deploy && node dist/index.js",
+    "build": "npx tsc",
+    "dev": "nodemon src/index.ts",
+    "start:dev": "npx tsc && prisma migrate deploy && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.10.0",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1",
+    "prisma": "^6.10.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.3",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
